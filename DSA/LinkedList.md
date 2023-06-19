@@ -1,6 +1,6 @@
 19/6/2023
 
-###LINKED LIST
+### LINKED LIST
 
 ---
 1. Middle element

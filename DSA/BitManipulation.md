@@ -25,6 +25,7 @@ For signed integers one bit is saved for sign hence range is 2^31-1
 16.If in an array of n intgers all element are present even no of times except one element then to find that element we do xor of all elements 
 since x^y^x=y
 17.Swapping  a and b using xor=>a=a^b;b=a^b;a=a^b;
+18.To count total no of bits in a binary rep of a no. n=log(n)+1
 ```
 To count no of set bits=>
 ```c

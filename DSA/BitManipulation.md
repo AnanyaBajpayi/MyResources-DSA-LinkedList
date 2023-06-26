@@ -38,8 +38,9 @@ return count;
 
 Alternatively you can use __builtin_popcount(a) for int and __builtin_popcountlll(a) for long
 ```
-```c
+
 To find all subsets of an array in O((2^n)*n) where n is the size of the array;
+```c
 vector<vector<int>>subsets;
 int subsetcount=1<<n;
 for(int mask=0;mask<subsetcount;mask++)
@@ -54,8 +55,107 @@ for(int mask=0;mask<subsetcount;mask++)
     subsets.push_back(subset);
   }
 
-
-
+```
+To add two binary numbers=>make cases
+```c
+ string addBinary(string a, string b) {
+        string ans;
+        reverse(a.begin(),a.end());
+        reverse(b.begin(),b.end());
+        char c='0';
+        char ip;
+        int i;
+        for(i=0;i<min(a.length(),b.length());i++)
+        {
+            if(a[i]=='1' && b[i]=='1')
+            {
+                if(c=='1')
+                {
+                    ip='1';
+                    c='1';    
+                }
+                else
+                {
+                    ip='0';
+                    c='1';
+                }
+            }
+            else if((a[i]=='1' && b[i]=='0') || (b[i]=='1' && a[i]=='0'))
+            {
+                if(c=='1')
+                {
+                    ip='0';
+                    c='1';
+                }
+                else
+                {
+                    ip='1';
+                    c='0';
+                }
+            }
+            else
+            {
+                if(c=='1')
+                {
+                    ip='1';
+                    c='0';
+                }
+                else
+                {
+                    ip='0';
+                    c='0';
+                }
+            }
+            ans+=ip;
+        }
+for (; i < a.length(); i++)
+        {
+            if (a[i] == '1')
+            {
+                if (c == '1')
+                    ans.push_back('0');
+                else
+                    ans.push_back('1');
+                    
+            }
+            else
+            {
+                if (c == '1')
+                {
+                    ans.push_back('1');
+                    c = '0';
+                }
+                else
+                    ans.push_back('0');
+            }
+        }
+        for (; i < b.length(); i++)
+        {
+            if (b[i] == '1')
+            {
+                if (c == '1')
+                    ans.push_back('0');
+                else
+                    ans.push_back('1');
+                    
+            }
+            else
+            {
+                if (c == '1')
+                {
+                    ans.push_back('1');
+                    c = '0';
+                }
+                else
+                    ans.push_back('0');
+            }
+        }
+        if(c=='1')
+        ans+='1';
+        reverse(ans.begin(),ans.end());
+        return ans;
+    }
+```
 
 
 

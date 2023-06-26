@@ -1,0 +1,27 @@
+26.06.2023
+
+###Bit manipulation
+For unsigned integers range is 2^32-1;
+For signed integers one bit is saved for sign hence range is 2^31-1
+---
+```c
+(For any number n if we want to do operation on bit at position i)
+1.Get Bit=>(n&(1<<i))
+2.Set Bit=>(n|(1<<i))
+3.Clear Bit=>(n&~(1<<i))
+4.Update Bit=>((n&~(1<<i))|(value)<<i)
+5.Toggle Bit=>(n^(1<<i))
+6.Power of 2=>(n!=0 && n&(n-1)==0)?return true:return false;
+```
+7.To count no of set bits=>
+```c
+int count=0;
+for(int i=31;i>=0;i--)
+{
+if(a&(1<<i)!=0)
+count++;
+}
+return count;
+
+Alternatively you can use __builtin_popcount(a) for int and __builtin_popcountlll(a) for long
+```

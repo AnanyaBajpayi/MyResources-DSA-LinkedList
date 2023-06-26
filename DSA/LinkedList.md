@@ -133,3 +133,56 @@ int getlength(ListNode* head1)
     return head;
     }
 ```
+11.To detect cycle (Floyds algo or Hare and Tortoise algo)=>take a fast and slow pointer at head and move fast=fast->next->next and slow=slow->next;
+As soon as fast and slow point to the same element break and return the slow pointer
+```c
+int detectLoop(Node* head)
+{
+    Node *slow_p = head, *fast_p = head;
+ 
+    while (slow_p && fast_p && fast_p->next) {
+        slow_p = slow_p->next;
+        fast_p = fast_p->next->next;
+        if (slow_p == fast_p) {
+            return 1;
+        }
+    }
+    return 0;
+}
+```
+12.To remove cycle=>First detect cycle then take fast to head and move it one step at a time until slow->next==fast->next
+
+```c
+bool hasCycle(ListNode *head) {
+        ListNode* fast1=head;
+        ListNode* slow1=head;
+        if(head==NULL || head->next==NULL)
+        return false;
+        while(fast1!=NULL && fast1->next!=NULL)
+        {
+            fast1=fast1->next->next;
+            slow1=slow1->next;
+            if(fast1==slow1)return true;
+        }
+        return false;
+    }
+    ListNode *detectCycle(ListNode *head) {
+        if(head==NULL || head->next==NULL)return NULL;
+        if(hasCycle(head)==false)return NULL;
+        ListNode* fast=head;
+        ListNode* slow=head;
+        do{
+            fast=fast->next->next;
+            slow=slow->next;
+        }while(fast!=slow);
+        fast=head;
+        while(fast!=slow)
+        {
+            fast=fast->next;
+            slow=slow->next;
+        }
+        return fast;
+
+    }
+    ```
+

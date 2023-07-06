@@ -1,5 +1,5 @@
 ### Tree
-How to create a tree and traverse it using recursive inorder,preorder,postorder
+How to create a tree and traverse it using recursive inorder,preorder,postorder,levelorder
 ```c
 struct node {
   int data;
@@ -37,6 +37,31 @@ void traversePostOrder(struct node *temp) {
     cout << " " << temp->data;
   }
 }
+//Traverse LevelOrder
+vector<vector<int>> levelOrder(TreeNode* root) {
+        vector<vector<int>> ans; 
+
+        if(root == NULL) return ans; 
+
+        queue<TreeNode*> q; 
+        q.push(root); 
+
+        while(!q.empty()) {
+            int size = q.size();
+            vector<int> level; 
+            for(int i = 0;i<size;i++) {
+                TreeNode *node = q.front(); 
+                q.pop(); 
+                if(node->left != NULL) q.push(node->left); 
+                if(node->right != NULL) q.push(node->right); 
+                level.push_back(node->val); 
+            }
+
+            ans.push_back(level); 
+        }
+
+        return ans; 
+    }
 int main() {
   struct node *root = newNode(1);
   root->left = newNode(2);

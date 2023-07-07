@@ -162,3 +162,14 @@ vector<int> postOrder(Node* node) {
         return post;
     }
 ```
+To find the maximum depth of a binary tree
+```c
+we can use level order traversal or recursive traversal
+using recursive traversal we know that the depth at any level=1+max(l,r)
+int maxDepth(TreeNode* root) {
+        if(root==NULL)return 0;
+        if(root->left==NULL && root->right==NULL)
+        return 1;
+        return(1+max(maxDepth(root->left),maxDepth(root->right)));
+        }
+```

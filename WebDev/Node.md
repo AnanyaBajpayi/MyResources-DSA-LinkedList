@@ -22,3 +22,29 @@
 6. Js Fullstack,Scalable,Non-blocking,Huge ecosystem.
  
 ```
+
+### Node REPL
+```c
+  1. R-Read
+  2. E-Evaluate
+  3. P-Print
+  4. L-Loop
+```
+```c
+
+1. Type node in the terminal(View->Terminal) of vs code and it activates REPL.
+
+2. Type .exit to get out of REPL.(CTRL+C multiple times (here 2 times) take you out of the command line window).
+
+3. You can do operations in repl.
+
+4. To run js files in node write =>node index.js.Make sure before that that you are in the correct folder.
+```
+### How to use Native Node modules
+```c
+Theyre like your starting toolset.It makes easy for making applications on server side.
+Documentation-https://nodejs.org/docs/latest-v18.x/api/modules.html
+
+```
+
+

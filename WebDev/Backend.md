@@ -1,6 +1,6 @@
 ### Backend=Server+Application+Database
 ---
-'''c
+```c
 1. Server-A computer,For any live website a server should be on 24/7 .
 2. For us the server is the local host coz we are making the website on our computer.
 3. Application-The logic behind how i want to respond to the request from the browser.It could send back data or status code or a new HTML page.
@@ -13,4 +13,4 @@ In a restaurant there are three parts......user sees the menu(which acts as the 
 9. Front end-HTML,CSS,JS,(Frameworks:React.js,Vue.js,Angular.js)
 10. Back end-Python,Ruby ,PHP ,C#,JS,Java(Frameworks:Ruby->Rails,Java->Spring,C#->ASP.net,php->larvel/cake,Python->flask/django,Javascript->Node.js)
 11. We are using because we know javascript and it can be used with react too.Most professionals use Node.js.Hence the most documentation is available for Node.js .And most of the jobs require Node.js.
-'''
+```

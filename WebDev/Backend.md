@@ -1,8 +1,8 @@
 ### Backend=Server+Application+Database
 ---
-Server-A computer,For any live website a server should be on 24/7 .
-For us the server is the local host coz we are making the website on our computer.
-Application-The logic behind how i want to respond to the request from the browser.It could send back data or status code or a new HTML page.
+1.Server-A computer,For any live website a server should be on 24/7 .
+2.For us the server is the local host coz we are making the website on our computer.
+3.Application-The logic behind how i want to respond to the request from the browser.It could send back data or status code or a new HTML page.
 If status code is 404 then it means the application does not know how to respond to the request that the browser made.
 Database-As websites get big ,we need to store data.Database stores persistent data and it doesnt get lost.It is like a permanent storage.
 For example:

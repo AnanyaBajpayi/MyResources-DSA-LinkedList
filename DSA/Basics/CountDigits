@@ -3,3 +3,11 @@ int count_digits( int n )
   string x = to_string(n);
   return x.length(); 
 }
+
+
+//alternatively you can also use
+int count_digits( int n )
+{
+  int digits = floor(log10(n) + 1);
+  return digits;
+}

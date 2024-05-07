@@ -1,4 +1,4 @@
-A class is the blueprint of an object.
+A class is the blueprint of an object.\endl
 In intellij idea,create a maven project.Inside it if you want to add any class,go to src->main->java, create a Java class using 'currentpackagename.Main1'(org.studyeasy.Main1).
 In the new class suppose you create a class 'Car' with instance variables.if the variable is public then you can access in other classes.If the variable is private you cannot access in any other class.
 In order to create getter and setter methods ,go to Code section at the top,click on generate,you have the option of getter and setter.

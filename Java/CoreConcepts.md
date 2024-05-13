@@ -1,4 +1,5 @@
-//Interface in java
+$Interface in java
+
 public interface Phone {
     String processor();
     String OS();

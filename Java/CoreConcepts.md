@@ -1,12 +1,12 @@
 # Interface in java
 
----
+```
 public interface Phone {
     String processor();
     String OS();
     int spaceInGB();
 }
----
+```
 
 ---
 public class Iphone8 implements Phone{

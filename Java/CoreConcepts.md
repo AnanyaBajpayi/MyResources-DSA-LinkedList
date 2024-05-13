@@ -1,11 +1,13 @@
 # Interface in java
-
+'''
 public interface Phone {
     String processor();
     String OS();
     int spaceInGB();
 }
+'''
 
+'''
 public class Iphone8 implements Phone{
     @Override
     public String processor() {
@@ -22,7 +24,8 @@ public class Iphone8 implements Phone{
         return 64;
     }
 }
-
+'''
+'''
 public class OnePlus5 implements Phone{
     @Override
     public String processor() {
@@ -39,18 +42,14 @@ public class OnePlus5 implements Phone{
         return 64;
     }
 }
-
+'''
+'''
 public static void main(String[] args) {
     Phone phone = new OnePlus5();
     System.out.println("Processor: " + phone.processor());
     System.out.println("Space in GB: " + phone.spaceInGB());
 }
-
-public static void main(String[] args) {
-    Phone phone = new OnePlus5();
-    System.out.println("Processor: " + phone.processor());
-    System.out.println("Space in GB: " + phone.spaceInGB());
-}
+'''
 
 # Output:
 

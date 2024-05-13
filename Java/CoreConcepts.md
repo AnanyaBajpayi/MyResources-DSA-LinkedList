@@ -1,4 +1,5 @@
 # Interface in java
+In interface you can only use public access modifier.NO Private or protected.
 
 ```
 public interface Phone {

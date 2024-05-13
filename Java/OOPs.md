@@ -12,8 +12,14 @@
 - In case of method conflict, i.e., same name classes in child and parent class, the child class wins.
 - Types of inheritance: Single inheritance (A -> B), Multiple inheritance (A -> C & B -> C) (Not allowed in Java), Multilevel inheritance (A -> B -> C), Hierarchical inheritance (A -> B, A -> C, A -> D), Hybrid inheritance.
 - Composition is a complex object of multiple components. For example, we create a class called `Car`. It has several properties like the number of seats, the number of wheels, engine info, battery info, etc. Now the number of seats and wheels is a simple property and can be denoted by a variable. But engine info and battery info are classes.
-- Composition denotes a HAS-A relationship.
+- Composition denotes a HAS-A relationship(where as inheritence IS-A relationship).
 - For eg. a laptop has a Screen ,Ram ,hard drive ,keyboard,graphics card,processor.Here screen ram ,harddrive,keyboard are simple components.But processor and graphics card are complex as they are themselves made from some simple components.
 - Encapsulation: To protect data members and member functions.Mark data members as private or protected and set values using setter function.
 - Polymorphism-means multiple forms
 - implemented through method overloading and method overriding
+- Phone phone;//This is not an object it is a refernce.This reference can take multiple forms depending on the situation.IN polymorphism base class can take any form,whether it is base class or child class.
+- phone=Nokia3310;
+- This is fine because phone is parent class of nokia3310
+- Watch polymorphism more times.
+- 
+- 

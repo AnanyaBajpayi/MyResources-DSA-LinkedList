@@ -1,4 +1,4 @@
-#Interface in java
+# Interface in java
 
 public interface Phone {
     String processor();
@@ -45,7 +45,15 @@ public static void main(String[] args) {
     System.out.println("Processor: " + phone.processor());
     System.out.println("Space in GB: " + phone.spaceInGB());
 }
-Output:
+
+public static void main(String[] args) {
+    Phone phone = new OnePlus5();
+    System.out.println("Processor: " + phone.processor());
+    System.out.println("Space in GB: " + phone.spaceInGB());
+}
+
+# Output:
+
 Processor: SD835
 Space in GB: 64
 
